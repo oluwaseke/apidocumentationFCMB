@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  position: relative;
+  width: 100vw;
+  background: linear-gradient(
+    90deg,
+    rgba(167, 49, 146, 1) 0%,
+    rgb(92, 38, 131) 100%
+  );
+  display: inline-flex;
+  /*display: grid;
+    grid-template-columns: 1fr 2fr;*/
+  height: 7vh;
+  box-shadow: 0 0 2vmin dimgray;
+  padding: 2vmin;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+header a:hover,
+header a:active {
+  color: #fcc302;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+header img {
+  height: 5vmin;
+}
+/*.vl {
+    border-left: 0.11vmin solid black;
+    border-radius: 0.01vmin;
+    height: 6vmin;
+  }*/
+header ul {
+  display: inline;
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+  padding-top: 0.8vmin;
+}
+header li {
+  margin: 1vmin;
+  display: inline;
+}
+a {
+  cursor: pointer;
+}
+
+.navbutton {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  display: flex;
+  font-size: 20px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 30px -9px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 0px 30px -9px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 0px 30px -9px rgba(0, 0, 0, 0.61);
+}
+.navbutton :hover {
+  color: #5c2684;
+}
+
+.code-wrapper {
+  border-radius: 0.5vmin;
+  margin: 1.5vmin;
+  padding: 1vmin;
+  background-color: #1e2223;
+  max-width: 80%;
+  font-family: "Courier Prime", monospace;
+  font-size: 13.5px;
+  color: #ffffff;
+}
+.active {
+  background-color: #ffffff;
+  color: #5c2684;
+  transition: 0.4s;
+}

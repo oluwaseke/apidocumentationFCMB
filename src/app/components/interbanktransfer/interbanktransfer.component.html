@@ -1,0 +1,104 @@
+<div>
+  <div>
+    <h1>Interbank Transfer API</h1>
+    <div><hr /></div>
+    <h5>Interbank Transfer API Endpoints</h5>
+    <br />
+    <div>
+      <h6>
+        <strong> B2C NIP Transfer </strong>
+      </h6>
+      <br />
+      <p>Sample Request:</p>
+      <div class="code-wrapper">
+        POST
+        https://devapi.fcmb.com/interbnktransfer/api/Transfer/do-nip-transfer-b2c
+        HTTP/1.1 <br />
+
+        client_id: 250<br />
+        Content-Type: application/json<br />
+        Cache-Control: no-cache<br />
+        Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e<br />
+
+        {{ "{" }}<br />
+        "requestId": "ffk14536d114f660060",<br />
+        "clientId": "250",<br />
+        "productId": 1,<br />
+        "nameEnquiryRef": "677890789098909890989098909890",<br />
+        "destinationInstitutionCode": "999214",<br />
+        "channelCode": "01",<br />
+        "debitAccountName": "DANJUMA YAKUBU",<br />
+        "debitAccountNumber": "1289907027",<br />
+        "debitBankVerificationNumber": "22228906717",<br />
+        "debitKYCLevel": "1",<br />
+        "beneficiaryAccountName": "ROSS ENIAYO KUTEYI",<br />
+        "beneficiaryAccountNumber": "3292573011",<br />
+        "beneficiaryKYCLevel": "1",<br />
+        "transactionLocation": "Ikorodu",<br />
+        "narration": "interbank test by Sol",<br />
+        "beneficiaryBankVerificationNumber": "1",<br />
+        "amount": 100<br />
+        }
+      </div>
+      <p>Response:</p>
+      <div class="code-wrapper">
+        HTTP/1.1 <span style="color: limegreen">200 OK </span> <br />
+        {{ "{" }} <br />
+        "code": "94",<br />
+        "description": "Duplicate transaction",<br />
+        "data": null<br />
+        }
+      </div>
+    </div>
+    <div>
+      <h6>
+        <strong> Interbank-SchemeCode </strong>
+      </h6>
+      <p style="font-size: small">
+        Enables a client to do interbank transfer from a dedicated group of
+        account with allocated schemecode
+      </p>
+      <br />
+      <p>Sample Request:</p>
+      <div class="code-wrapper">
+        POST
+        https://devapi.fcmb.com/interbnktransfer/api/Transfer/do-nip-transfer-SchemeCode-b2c
+        HTTP/1.1 <br />
+
+        client_id: 250 <br />
+        Content-Type: application/json <br />
+        Cache-Control: no-cache <br />
+        Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e <br />
+
+        {{ "{" }} <br />
+        "requestId": "ffk54536d112f66",<br />
+        "clientId": "250",<br />
+        "productId": 1,<br />
+        "nameEnquiryRef": "677890789098909890989098909890",<br />
+        "destinationInstitutionCode": "999214",<br />
+        "channelCode": "01",<br />
+        "debitAccountName": "DANJUMA YAKUBU",<br />
+        "debitAccountNumber": "7641597011",<br />
+        "debitBankVerificationNumber": "22228906717",<br />
+        "debitKYCLevel": "1",<br />
+        "beneficiaryAccountName": "ROSS ENIAYO KUTEYI",<br />
+        "beneficiaryAccountNumber": "3292573011",<br />
+        "beneficiaryKYCLevel": "1",<br />
+        "beneficiaryBankVerificationNumber": "1",<br />
+        "transactionLocation": "2125347370",<br />
+        "narration": "interbank test by Sol",<br />
+        "amount": 100<br />
+        }
+      </div>
+      <p>Response:</p>
+      <div class="code-wrapper">
+        HTTP/1.1 <span style="color: limegreen">200 OK</span> <br />
+        {{ "{" }} <br />
+        "code": "94",<br />
+        "description": "Duplicate transaction",<br />
+        "data": null <br />
+        }
+      </div>
+    </div>
+  </div>
+</div>

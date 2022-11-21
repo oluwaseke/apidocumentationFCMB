@@ -1,0 +1,66 @@
+<div>
+  <h1>Account Management</h1>
+  <div><hr /></div>
+  <h5>Account Management Endpoints</h5>
+  <br />
+  <div>
+    <h6>
+      <strong> ​/api​/Accounts​/v1​/CreateAdditionalOD (Full Data)</strong>
+    </h6>
+    <br />
+    <p>Sample Request:</p>
+    <div class="code-wrapper">
+      POST
+      https://devapi.fcmb.com/accountmanagement/api/Accounts/v1/CreateAdditionalODAccountFullData
+      HTTP/1.1 <br />
+      client_id: 250 <br />
+      Cache-Control: no-cache <br />
+      Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+    </div>
+    <p>Response:</p>
+    <div class="code-wrapper">
+      HTTP/1.1
+      <span style="color: lightsalmon">415 Unsupported Media Type</span> <br />
+      {{ "{" }}
+      <br />
+      "type": "https://tools.ietf.org/html/rfc7231#section-6.5.13", <br />
+      "title": "Unsupported Media Type", <br />
+      "status": 415, <br />
+      "traceId": "00-eb19631b9c72e94396c28368ec0d36c5-80d2d192770b684e-00"
+      <br />
+      }<br />
+    </div>
+  </div>
+  <div>
+    <h6>
+      <strong> ​/api/Accounts/v1/ActivateDormantAccount - POST</strong>
+    </h6>
+    <br />
+    <p>Sample Request:</p>
+    <div class="code-wrapper">
+      POST
+      https://devapi.fcmb.com/accountmanagement/api/Accounts/v1/ActivateDormantAccount
+      HTTP/1.1 <br />
+      client_id: 250 <br />
+      Content-Type: application/json <br />
+      Cache-Control: no-cache <br />
+      Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e <br />{{
+        "{"
+      }}
+      <br />
+      "requestId": "string", <br />
+      "accountNo": "string" <br />
+      }
+    </div>
+    <p>Response:</p>
+    <div class="code-wrapper">
+      HTTP/1.1 <span style="color: lightsalmon">422 Unprocessable Entity</span>
+      <br />
+      {{ "{" }} <br />
+      "responseData": null, <br />
+      "description": "Invalid account number", <br />
+      "code": "E0015", <br />
+      "status": false }
+    </div>
+  </div>
+</div>

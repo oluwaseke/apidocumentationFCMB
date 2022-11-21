@@ -1,0 +1,66 @@
+<div>
+  <div>
+    <h1>BVN Validation</h1>
+    <div><hr /></div>
+    <h5>BVN Validation Endpoints</h5>
+    <br />
+    <div>
+      <h6>
+        <strong>BVN Validation</strong>
+      </h6>
+      <br />
+      <p>Sample Request:</p>
+      <div class="code-wrapper">
+        GET
+        https://devapi.fcmb.com/bvnValidation/api/CustomerInquiry/bvnvalidation?bvn=22443815128
+        HTTP/1.1 <br />
+        client_id: 250 <br />
+        Cache-Control: no-cache <br />
+        Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+      </div>
+      <p>Response:</p>
+      <div class="code-wrapper">
+        HTTP/1.1 <span style="color: limegreen">200 OK</span> {{ "{" }} <br />
+        "code": "00", <br />
+        "data": {{ "{" }} <br />
+        "statusField": true, <br />
+        "dataField": {{ "{" }} <br />
+        "bVNField": {{ "{" }} <br />
+        "responseCodeField": "00", <br />
+        "bVNField": "22443815128", <br />
+        "firstNameField": "OLUWASEKE", <br />
+        "middleNameField": "OLUWATODIMU", <br />
+        "lastNameField": "TANIMOLA", <br />
+        "dateOfBirthField": "09-Jul-2001", <br />
+        "registrationDateField": "11-Aug-2017", <br />
+        "enrollmentBankField": "035", <br />
+        "emailField": "", <br />
+        "genderField": "Male", <br />
+        "levelOfAccountField": "Level 1 - Low Level Accounts", <br />
+        "lgaOfOriginField": "Ifako-Ijaiye", <br />
+        "lgaOfResidenceField": "Ifako-Ijaiye", <br />
+        "maritalStatusField": "Single", <br />
+        "nINField": "", <br />
+        "nameOnCardField": "TANIMOLA OLUWASEKE OLUWATODIMU", <br />
+        "nationalityField": "Nigeria", <br />
+        "phoneNumber1Field": "08141842102", <br />
+        "phoneNumber2Field": "", <br />
+        "residentialAddressField": "7 EGBEYEMI STREET OFF TERRY GRILLO STREET
+        AHMADIYYA LAGOS", <br />
+        "stateOfOriginField": "Lagos State", <br />
+        "stateOfResidenceField": "Lagos State", <br />
+        "watchListedField": "0", <br />
+        "imageHashValueField":
+        "73287aaa31e49a7dbbe63cc4d2f66ae17c9bf02ac69e1c7e469be2e648b749ee"
+        <br />
+        "bVNImageField":
+        <br />
+        },<br />
+        "messageField": "" <br />
+        }, <br />
+        "description": "Validaion Successful" <br />
+        }
+      </div>
+    </div>
+  </div>
+</div>

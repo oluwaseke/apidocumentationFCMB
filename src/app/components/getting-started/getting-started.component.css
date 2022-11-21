@@ -1,0 +1,16 @@
+ul {
+  list-style-type: none;
+  margin: 2vmin 0;
+}
+#bigger-images {
+  width: 57vw;
+  height: 30vw;
+}
+
+ul img {
+  height: 20vw;
+  width: 45vw;
+  border: transparent;
+  border-radius: 0.7vmin;
+  box-shadow: 0vmin 0vmin 0.3vmin black;
+}

@@ -1,0 +1,61 @@
+<div>
+  <div>
+    <h1>Intrabank Transfer API</h1>
+    <div><hr /></div>
+    <h5>Intrabank Transfer API Endpoints</h5>
+    <br />
+    <div>
+      <h6>
+        <strong> B2C Transfer </strong>
+      </h6>
+      <p style="font-size: small">
+        Enables a business entity to transfer money from their account to FCMB
+        customers. The account of the business must have been configured by the
+        bank against the clientID. Fee is usually associated with this API based
+        on agreement with the bank.
+      </p>
+      <br />
+      <p>Sample Request:</p>
+      <div class="code-wrapper">
+        POST
+        https://devapi.fcmb.com/intrabanktransferopenapi/api/IntrabankTransfer/b2cTransfer
+        HTTP/1.1 <br />
+        client_id: 250 <br />
+        Content-Type: application/json <br />
+        Cache-Control: no-cache <br />
+        Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e <br />
+        {{ "{" }} <br />
+        "debitAccountNo": "1289907027", <br />
+        "creditAccountNo": "1289907010", <br />
+        "amount": 1000, <br />
+        "productId": 11, <br />
+        "narration": "Test transaction", <br />
+        "debitMerchantForCharge": true, <br />
+        "requestId": "1234567720118843" <br />
+        }
+      </div>
+      <p>Response:</p>
+      <div class="code-wrapper">
+        HTTP/1.1 <span style="color: limegreen">200 OK</span> <br />
+        {{ "{" }}<br />
+        "data": {{ "{" }} <br />
+        "stan": "538184715723", <br />
+        "customer_Reference": "1234567720118843",<br />
+        "amount": "1000.0", <br />
+        "tran_id": "S57213589" <br />
+        }, <br />
+        "description": "Approved Or Completed Successfully", <br />
+        "code": "00" <br />
+        }
+      </div>
+    </div>
+    <div>
+      <h6>
+        <strong> C2B Transfer By Scheme Code </strong>
+      </h6>
+      <p style="font-size: small"></p>
+      <br />
+      <p>Sample Request:</p>
+    </div>
+  </div>
+</div>

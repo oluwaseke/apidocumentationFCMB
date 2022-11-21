@@ -1,0 +1,67 @@
+<div>
+  <div>
+    <h1>CIMG - Airtime and Data Vending</h1>
+    <div><hr /></div>
+    <h5>CIMG - Airtime and Data Vending Endpoints</h5>
+    <br />
+    <div>
+      <h6>
+        <strong> Authentication </strong>
+      </h6>
+      <br />
+      <p>Sample Request:</p>
+      <div class="code-wrapper">
+        POST https://devapi.fcmb.com/cimg/api/Authentication/auth HTTP/1.1
+        <br />
+        client_id: 250 <br />
+        Cache-Control: no-cache <br />
+        Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+      </div>
+      <p>Response:</p>
+      <div class="code-wrapper">
+        HTTP/1.1 <span style="color: limegreen">200 OK</span> <br />
+        {{ "{" }} <br />
+        "data": "Token added.", <br />
+        "description": "success", <br />
+        "code": "00" <br />
+        }
+      </div>
+    </div>
+    <div>
+      <h6>
+        <strong>Get Account Status </strong>
+      </h6>
+      <br />
+      <p>Sample Request:</p>
+      <div class="code-wrapper">
+        HTTP/1.1 <span style="color: limegreen">200 OK</span> <br />
+        {{ "{" }} <br />
+        "data": {{ "{" }} <br />
+        "expires": "2021-10-08T05:20:31.757Z", <br />
+        "_id": "613611327c815102330f2df8", <br />
+        "username": "test@fcmb",<br />
+        "first_name": null,<br />
+        "account_type": "agent",<br />
+        "main_account": "6136107b7c815102330f2df2",<br />
+        "balance": 9965734,<br />
+        "currency": "NGN",<br />
+        "wallet_id": "NGN59217243",<br />
+        "dashboard_enabled": true,<br />
+        "sms_access": true,<br />
+        "pos_access": true,<br />
+        "account_access": true,<br />
+        "transactions_access": true,<br />
+        "pins_access": false,<br />
+        "jobs_access": true, <br />
+        "price_access": true,<br />
+        "topuplog_access": true,<br />
+        "support_access": true,<br />
+        "balance_access": true,<br />
+        "dstv_mode": "new"<br />
+        },<br />
+        "description": "success",<br />
+        "code": "00" }
+      </div>
+    </div>
+  </div>
+</div>

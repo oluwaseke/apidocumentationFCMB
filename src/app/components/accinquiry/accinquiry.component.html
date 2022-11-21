@@ -1,0 +1,209 @@
+<div>
+  <h1>Account Inquiry</h1>
+  <div><hr /></div>
+  <h5>Account Inquiry Endpoints</h5>
+  <br />
+  <div>
+    <h6>
+      <strong>
+        /api/AccountInquiry/accountOfficer?accountOfficerCode={{
+          "{"
+        }}accountOfficerCode} - GET</strong
+      >
+    </h6>
+    <br />
+    <p>Sample Request:</p>
+    <div class="code-wrapper">
+      GET
+      https://devapi.fcmb.com/accountinquiry/api/AccountInquiry/accountOfficer?accountOfficerCode=123
+      HTTP/1.1 <br />
+      client_id: 250 <br />
+      Cache-Control: no-cache <br />
+      Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+    </div>
+    <p>Response:</p>
+    <div class="code-wrapper">
+      HTTP/1.1 <span style="color: limegreen">200 OK</span> <br />
+      {{ "{" }} <br />
+      "data": {{ "{" }} <br />
+      "primaryAccountOfficerCode": null, <br />
+      "primaryAccountOfficerName": null, <br />
+      "primaryAccountOfficerEmail": null, <br />
+      "primaryAccountOfficerMobile": null, <br />
+      "branchName": null, "branchPhone":<br />
+      null, <br />
+      "bmEmail": null, <br />"bmEmailPhone": null <br />},<br />
+      "code": "99",<br />
+      "description": "No matching officer detail for the accountOfficer Code
+      supplied: 123" }
+    </div>
+  </div>
+  <br />
+  <div>
+    <h6>
+      <strong>
+        /api/AccountInquiry/accountStatus?accountNumber={{ "{" }}accountNumber}
+        - GET</strong
+      >
+    </h6>
+    <br />
+    <p>Sample Request:</p>
+    <div class="code-wrapper">
+      GET
+      https://devapi.fcmb.com/accountinquiry/api/AccountInquiry/accountStatus?accountNumber=7795271012
+      HTTP/1.1 <br />
+      client_id: 250 <br />
+      Cache-Control: no-cache <br />
+      Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+    </div>
+    <p>Response:</p>
+    <div class="code-wrapper">
+      HTTP/1.1
+      <span style="color: limegreen">200 OK </span><br />
+      {{ "{" }} <br />
+      "data": {{ "{" }} <br />
+      "accountStatus": "Active", <br />
+      "freezeType": null, <br />
+      "freezeReason": null, <br />
+      "freeze_Reason_Code": null, <br />
+      "frez_code": " " <br />
+      }, <br />
+      "code": "00", <br />
+      "description": "success" }
+    </div>
+  </div>
+  <div>
+    <h6>
+      <strong>
+        /api/AccountInquiry/accountSummary?accountNo={{ "{" }}accountNo} -
+        GET</strong
+      >
+    </h6>
+    <br />
+    <p>Sample Request:</p>
+    <div class="code-wrapper">
+      GET
+      https://devapi.fcmb.com/accountinquiry/api/AccountInquiry/accountSummary?accountNo=1289907027
+      HTTP/1.1 <br />
+      client_id: 250 <br />
+      Cache-Control: no-cache <br />
+      Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+    </div>
+    <p>Response:</p>
+    <div class="code-wrapper">
+      HTTP/1.1 <span style="color: limegreen">200 OK</span> <br />
+      {{ "{" }} <br />
+      "data": {{ "{" }} <br />
+      "accountName": "OMOSUYI SUNDAY SAMUEL", <br />
+      "accountNumber": "1289907027" <br />, "accountStatus": null, <br />
+      "drawingPower": "0", <br />
+      "customerId": "1289907", <br />
+      "currency": "NGN", <br />
+      "freezeReason": null,<br />
+      "availableBalance": 170344709.69, <br />
+      "ledgerBalance": 170344709.69,<br />
+      "totalDebit": 111120153.27,<br />
+      "totalCredit": 281464862.96, <br />
+      "lienAmount": 0, <br />
+      "openingDate": "07/03/2013 <br />
+      00:00:00", <br />
+      "schemeCode": "OD210"<br />
+      }, <br />
+      "code": "00",<br />
+      "description": "success" }
+    </div>
+  </div>
+  <div>
+    <h6>
+      <strong>
+        /api/AccountInquiry/accountOfficer?accountOfficerCode={{
+          "{"
+        }}accountOfficerCode} - GET</strong
+      >
+    </h6>
+    <br />
+    <p>Sample Request:</p>
+    <div class="code-wrapper">
+      GET
+      https://devapi.fcmb.com/accountinquiry/api/AccountInquiry/acctBalance?accountNumber=1289907027&requestId=8292992902010283
+      HTTP/1.1 <br />
+      client_id: 250 <br />
+      Cache-Control: no-cache <br />
+      Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+    </div>
+    <p>Response:</p>
+    <div class="code-wrapper">
+      HTTP/1.1 <span style="color: limegreen">200 OK</span> <br />
+      {{ "{" }} <br />
+      "data": {{ "{" }} <br />
+      "balance": 170336636.44 <br />
+      }, <br />
+      "requestId": "8292992902010283", <br />
+      "code": "00", <br />
+      "description": "Success" <br />
+      }
+    </div>
+  </div>
+  <div>
+    <h6>
+      <strong> /api/AccountInquiry/acctBalanceBySchemeCode - POST</strong>
+    </h6>
+    <br />
+    <p>Sample Request:</p>
+    <div class="code-wrapper">
+      GET
+      https://devapi.fcmb.com/accountinquiry/api/AccountInquiry/acctCurrency?accountNumber=1289907027
+      HTTP/1.1 <br />
+      client_id: 250 <br />
+      Cache-Control: no-cache <br />
+      Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+    </div>
+    <p>Response:</p>
+    <div class="code-wrapper">
+      HTTP/1.1 <span style="color: limegreen">200 OK</span> <br />
+      {{ "{" }} <br />
+      "data": {{ "{" }} <br />
+      "currency": "NGN" <br />
+      }, <br />
+      "code": "00", <br />
+      "description": "Success" <br />
+      }
+    </div>
+  </div>
+  <div>
+    <h6>
+      <strong>
+        /api/AccountInquiry/acctCurrency?accountNumber={{ "{" }}accountNumber} -
+        GET</strong
+      >
+    </h6>
+    <br />
+    <p>Sample Request:</p>
+    <div class="code-wrapper">
+      GET
+      https://devapi.fcmb.com/accountinquiry/api/AccountInquiry/acctCurrency?accountNumber=1289907027
+      HTTP/1.1 <br />
+      client_id: 250 <br />
+      Cache-Control: no-cache <br />
+      Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+    </div>
+    <p>Response:</p>
+    <div class="code-wrapper">
+      HTTP/1.1 <span style="color: limegreen"></span> <br />
+      {{ "{" }} <br />
+      "data": {{ "{" }} <br />
+      "currency": "NGN" <br />
+      }, <br />
+      "code": "00", <br />
+      "description": "Success" <br />
+      } <br />
+    </div>
+  </div>
+  <div>
+    <h6>
+      <strong> </strong>
+    </h6>
+    <br />
+    <p>Sample Request:</p>
+  </div>
+</div>

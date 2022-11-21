@@ -1,0 +1,70 @@
+<div>
+  <h1>Account Opening</h1>
+  <div><hr /></div>
+  <h5>Account Opening Endpoints</h5>
+  <br />
+  <div>
+    <h6>
+      <strong>Do Account Enquiry</strong>
+    </h6>
+    <br />
+    <p>Sample Request:</p>
+    <div class="code-wrapper">
+      GET
+      https://devapi.fcmb.com/accountopening/api/Accounts/v1/RetrieveRetailAccountDetails/123
+      HTTP/1.1 <br />
+      client_id: 250 <br />
+      Cache-Control: no-cache <br />
+      Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+    </div>
+    <p>Response:</p>
+    <div class="code-wrapper">
+      HTTP/1.1 <span style="color: limegreen">200 OK</span> <br />{{ "{" }}
+      <br />
+      "data": {{ "{" }}<br />
+      "accountNumber": "8660390010", <br />
+      "accountName": "AYOTUNDE TEST_NAME ", <br />
+      "phoneNumber": "08064834571", <br />
+      "email": "skad70@yahoo.com", <br />
+      "cifId": "8660390" <br />
+      }, <br />
+      "description": "Success", <br />
+      "code": "00" <br />
+      }
+    </div>
+  </div>
+  <div>
+    <h6>
+      <strong>Remove Freeze from Digital Account</strong>
+    </h6>
+    <br />
+    <p>Sample Request:</p>
+    <div class="code-wrapper">
+      POST
+      https://devapi.fcmb.com/accountopening/api/Accounts/v1/RemoveFreezeWithSchemeCode
+      HTTP/1.1 <br />
+
+      client_id: 250 <br />
+      Content-Type: application/json <br />
+      Cache-Control: no-cache <br />
+      Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e <br />
+
+      {{ "{" }} <br />
+      "requestId": "string", <br />
+      "accountNumber": "string", <br />
+      "freezeCode": "string" <br />
+      }
+    </div>
+    <p>Response:</p>
+    <div class="code-wrapper">
+      HTTP/1.1 <span style="color: lightsalmon">422 Unprocessable Entity</span>
+      <br />
+
+      {{ "{" }} <br />
+      "code": "57", <br />
+      "description": "Fcmb Invalid Nuban Account", <br />
+      "data": null <br />
+      }
+    </div>
+  </div>
+</div>

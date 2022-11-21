@@ -1,0 +1,203 @@
+<div>
+  <div>
+    <h1>Statement_API</h1>
+    <div><hr /></div>
+    <h5>Statement_API Endpoints</h5>
+    <br />
+    <div>
+      <h6>
+        <strong>Get All States </strong>
+      </h6>
+      <p style="font-size: small">Returns a list of all states in Nigeria</p>
+      <br />
+      <p>Sample Request:</p>
+      <div class="code-wrapper">
+        GET
+        https://devapi.fcmb.com/utilityinquiry/api/BranchCityAndState/GetAllStates
+        HTTP/1.1 <br />
+        client_id: 250 <br />
+        Cache-Control: no-cache <br />
+        Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+      </div>
+      <p>Response:</p>
+      <div class="code-wrapper">
+        HTTP/1.1 <span style="color: limegreen">200 OK</span> <br />
+        {{ "{" }} <br />
+        "allStatesData": null, <br />
+        "code": "00", <br />
+        "description": "Success", <br />
+        "data": [{{ "{" }} <br />
+        "ref_Code": ".", <br />
+        "ref_Desc": "UPLOAD" <br />
+        }, {{ "{" }} <br />
+        "ref_Code": "02", <br />
+        "ref_Desc": "GUA. STATE" <br />
+        }, {{ "{" }} <br />
+        "ref_Code": "AB",<br />
+        "ref_Desc": "ABIA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "AD",<br />
+        "ref_Desc": "ADAMAWA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "AK",<br />
+        "ref_Desc": "AKWA IBOM STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "AN",<br />
+        "ref_Desc": "ANAMBRA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "BA",<br />
+        "ref_Desc": "BAUCHI STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "BN",<br />
+        "ref_Desc": "BENUE STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "BO",<br />
+        "ref_Desc": "BORNO STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "BY",<br />
+        "ref_Desc": "BAYELSA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "CR",<br />
+        "ref_Desc": "CROSS RIVER STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "DL",<br />
+        "ref_Desc": "DELTA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "EB",<br />
+        "ref_Desc": "EBONYI STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "ED",<br />
+        "ref_Desc": "EDO STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "EK",<br />
+        "ref_Desc": "EKITI STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "EN",<br />
+        "ref_Desc": "ENUGU STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "FC",<br />
+        "ref_Desc": "FEDERAL CAPITAL TERRITORY"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "GM",<br />
+        "ref_Desc": "GOMBE STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "IM",<br />
+        "ref_Desc": "IMO STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "JG",<br />
+        "ref_Desc": "JIGAWA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "KA",<br />
+        "ref_Desc": "KARNATAKA"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "KB",<br />
+        "ref_Desc": "KEBBI STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "KD",<br />
+        "ref_Desc": "KADUNA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "KG",<br />
+        "ref_Desc": "KOGI STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "KN",<br />
+        "ref_Desc": "KANO STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "KT",<br />
+        "ref_Desc": "KATSINA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "KW",<br />
+        "ref_Desc": "KWARA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "NI",<br />
+        "ref_Desc": "NIGER STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "NS",<br />
+        "ref_Desc": "NASARAWA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "OG",<br />
+        "ref_Desc": "OGUN STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "ON",<br />
+        "ref_Desc": "ONDO STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "OS",<br />
+        "ref_Desc": "OSUN STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "OY",<br />
+        "ref_Desc": "OYO STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "PL",<br />
+        "ref_Desc": "PLATEAU STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "RV",<br />
+        "ref_Desc": "RIVERS STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "SK",<br />
+        "ref_Desc": "SOKOTO STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "TR",<br />
+        "ref_Desc": "TARABA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "YB",<br />
+        "ref_Desc": "YOBE STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "ZM",<br />
+        "ref_Desc": "ZAMFARA STATE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "NA",<br />
+        "ref_Desc": "NOT APPLICABLE"<br />
+        }, {{ "{" }} <br />
+        "ref_Code": "LG",<br />
+        "ref_Desc": "LAGOS"<br />
+        }] }
+      </div>
+    </div>
+    <div>
+      <h6>
+        <strong>Get All Employment List </strong>
+      </h6>
+      <p style="font-size: small">Used as part of Account Opening</p>
+      <br />
+      <p>Sample Request:</p>
+      <div class="code-wrapper">
+        GET
+        https://devapi.fcmb.com/utilityinquiry/api/DetailsInquiry/GetAllEmploymentList
+        HTTP/1.1 <br />
+        client_id: 250 <br />
+        Cache-Control: no-cache <br />
+        Ocp-Apim-Subscription-Key: 32e9c71e2f3b45a3a248f43e32bdbe1e
+      </div>
+      <p>Response:</p>
+      <div class="code-wrapper">
+        HTTP/1.1 <span style="color: limegreen">200 OK</span> <br />
+
+        {{ "{" }} <br />
+        "data": [{{ "{" }} <br />
+        "value": "Employed",<br />
+        "localetext": "EMPLOYED"<br />
+        }, {{ "{" }} <br />
+        "value": "Unemployed",<br />
+        "localetext": "UNEMPLOYED"<br />
+        }, {{ "{" }} <br />
+        "value": "Salaried",<br />
+        "localetext": "SALARIED"<br />
+        }, {{ "{" }} <br />
+        "value": "Self employed",<br />
+        "localetext": "SELF EMPLOYED"<br />
+        }, {{ "{" }} <br />
+        "value": "Retired",<br />
+        "localetext": "RETIRED"<br />
+        }, {{ "{" }} <br />
+        "value": "Housewife",<br />
+        "localetext": "HOUSEWIFE"<br />
+        }, {{ "{" }} <br />
+        "value": "Other",<br />
+        "localetext": "OTHER"<br />
+        }],<br />
+        "code": "00",<br />
+        "description": "Success"<br />
+        }
+      </div>
+    </div>
+  </div>
+</div>
